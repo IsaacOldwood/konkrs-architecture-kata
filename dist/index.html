@@ -9,6 +9,7 @@
       name="description"
       content="Konkrs is the SaaS platform for running conker tournaments in your local park or community event: brackets, referees, live standings and player registration, all in one place."
     />
+    <meta name="author" content="Isaac Oldwood" />
     <style>
       :root {
         --maroon-dark: #2b0a06;
@@ -276,6 +277,71 @@
         background: var(--gold);
         color: var(--maroon-dark);
       }
+
+      .founder {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 560px;
+        margin: 0 auto;
+        padding: 0 1.5rem 2.5rem;
+        text-align: center;
+        border-top: 1px solid rgba(245, 166, 35, 0.25);
+        padding-top: 2.5rem;
+      }
+
+      .founder-heading {
+        font-size: 1.5rem;
+        color: var(--gold-light);
+        margin: 0 0 1rem;
+      }
+
+      .founder-photo {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid var(--gold);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+      }
+
+      .founder-name {
+        margin: 1rem 0 0.25rem;
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: var(--cream);
+      }
+
+      .founder-note {
+        margin: 0.5rem auto 1.1rem;
+        max-width: 460px;
+        color: var(--cream-dim);
+        font-size: 0.95rem;
+        line-height: 1.5;
+      }
+
+      .linkedin-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        border: 1px solid var(--gold);
+        color: var(--gold-light);
+        transition: background 0.15s ease, color 0.15s ease;
+      }
+
+      .linkedin-link:hover {
+        background: var(--gold);
+        color: var(--maroon-dark);
+      }
+
+      .linkedin-link svg {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+      }
     </style>
   </head>
   <body>
@@ -331,6 +397,28 @@
         <a class="cfp-link" href="cfp.pdf" target="_blank" rel="noopener">📄 View PDF</a>
         <a class="cfp-link" href="cfp.md" target="_blank" rel="noopener">📝 View Markdown</a>
       </div>
+    </section>
+
+    <section class="founder">
+      <h2 class="founder-heading">Meet the Founder</h2>
+      <img class="founder-photo" src="me.jpg" alt="Photo of Isaac Oldwood, founder of Konkrs" />
+      <p class="founder-name">Isaac Oldwood</p>
+      <p class="founder-note">
+        Reach out if you would like me to run this workshop for you.
+      </p>
+      <a
+        class="linkedin-link"
+        href="https://www.linkedin.com/in/isaac-oldwood/"
+        target="_blank"
+        rel="noopener"
+        aria-label="Isaac Oldwood on LinkedIn"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"
+          />
+        </svg>
+      </a>
     </section>
 
     <footer>
