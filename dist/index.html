@@ -67,17 +67,55 @@
         animation: drift 18s linear infinite;
       }
 
-      .conker-bg span:nth-child(1) { top: 10%; left: 8%; animation-duration: 22s; }
-      .conker-bg span:nth-child(2) { top: 30%; left: 80%; animation-duration: 16s; width: 14px; height: 14px; }
-      .conker-bg span:nth-child(3) { top: 65%; left: 20%; animation-duration: 25s; width: 30px; height: 30px; }
-      .conker-bg span:nth-child(4) { top: 80%; left: 60%; animation-duration: 20s; }
-      .conker-bg span:nth-child(5) { top: 45%; left: 45%; animation-duration: 28s; width: 12px; height: 12px; }
-      .conker-bg span:nth-child(6) { top: 15%; left: 55%; animation-duration: 19s; width: 18px; height: 18px; }
+      .conker-bg span:nth-child(1) {
+        top: 10%;
+        left: 8%;
+        animation-duration: 22s;
+      }
+      .conker-bg span:nth-child(2) {
+        top: 30%;
+        left: 80%;
+        animation-duration: 16s;
+        width: 14px;
+        height: 14px;
+      }
+      .conker-bg span:nth-child(3) {
+        top: 65%;
+        left: 20%;
+        animation-duration: 25s;
+        width: 30px;
+        height: 30px;
+      }
+      .conker-bg span:nth-child(4) {
+        top: 80%;
+        left: 60%;
+        animation-duration: 20s;
+      }
+      .conker-bg span:nth-child(5) {
+        top: 45%;
+        left: 45%;
+        animation-duration: 28s;
+        width: 12px;
+        height: 12px;
+      }
+      .conker-bg span:nth-child(6) {
+        top: 15%;
+        left: 55%;
+        animation-duration: 19s;
+        width: 18px;
+        height: 18px;
+      }
 
       @keyframes drift {
-        0% { transform: translateY(0) rotate(0deg); }
-        50% { transform: translateY(-30px) rotate(180deg); }
-        100% { transform: translateY(0) rotate(360deg); }
+        0% {
+          transform: translateY(0) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-30px) rotate(180deg);
+        }
+        100% {
+          transform: translateY(0) rotate(360deg);
+        }
       }
 
       main {
@@ -85,7 +123,7 @@
         z-index: 1;
         width: 100%;
         max-width: 720px;
-        padding: 4rem 1.5rem 3rem;
+        padding: 4rem 1.5rem 0rem;
         text-align: center;
       }
 
@@ -97,8 +135,14 @@
       }
 
       @keyframes pop-in {
-        0% { transform: scale(0.6); opacity: 0; }
-        100% { transform: scale(1); opacity: 1; }
+        0% {
+          transform: scale(0.6);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
       }
 
       .brand {
@@ -197,7 +241,9 @@
         font-weight: 700;
         font-size: 1rem;
         cursor: pointer;
-        transition: transform 0.15s ease, background 0.15s ease;
+        transition:
+          transform 0.15s ease,
+          background 0.15s ease;
       }
 
       button:hover {
@@ -237,7 +283,7 @@
         text-decoration: underline;
       }
 
-      .cfp {
+      .rfp {
         position: relative;
         z-index: 1;
         width: 100%;
@@ -249,20 +295,20 @@
         padding-top: 2.5rem;
       }
 
-      .cfp-heading {
+      .rfp-heading {
         font-size: 1.5rem;
         color: var(--gold-light);
         margin: 0 0 0.75rem;
       }
 
-      .cfp-links {
+      .rfp-links {
         display: flex;
         gap: 0.75rem;
         justify-content: center;
         flex-wrap: wrap;
       }
 
-      .cfp-link {
+      .rfp-link {
         display: inline-block;
         padding: 0.7rem 1.4rem;
         border-radius: 8px;
@@ -270,10 +316,12 @@
         color: var(--gold-light);
         text-decoration: none;
         font-weight: 600;
-        transition: background 0.15s ease, color 0.15s ease;
+        transition:
+          background 0.15s ease,
+          color 0.15s ease;
       }
 
-      .cfp-link:hover {
+      .rfp-link:hover {
         background: var(--gold);
         color: var(--maroon-dark);
       }
@@ -329,7 +377,9 @@
         border-radius: 50%;
         border: 1px solid var(--gold);
         color: var(--gold-light);
-        transition: background 0.15s ease, color 0.15s ease;
+        transition:
+          background 0.15s ease,
+          color 0.15s ease;
       }
 
       .linkedin-link:hover {
@@ -346,7 +396,8 @@
   </head>
   <body>
     <div class="conker-bg" aria-hidden="true">
-      <span></span><span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span
+      ><span></span>
     </div>
 
     <main>
@@ -356,21 +407,31 @@
       <span class="badge">Coming Soon</span>
 
       <p class="description">
-        Konkrs is the all-in-one platform for running conker tournaments in your local
-        park or community event. Create tournaments, manage participants, generate
-        brackets, assign referees, and record match results &mdash; while players
-        register and follow live standings from the web or their phone.
+        Konkrs is the all-in-one platform for running conker tournaments in your
+        local park or community event. Create tournaments, manage participants,
+        generate brackets, assign referees, and record match results &mdash;
+        while players register and follow live standings from the web or their
+        phone.
       </p>
 
       <ul class="features">
         <li><strong>Brackets</strong>Auto-generated and always up to date</li>
         <li><strong>Referees</strong>Assign officials to every match</li>
-        <li><strong>Live standings</strong>Players follow along in real time</li>
-        <li><strong>Any device</strong>Web and mobile, wherever the conkers fall</li>
+        <li>
+          <strong>Live standings</strong>Players follow along in real time
+        </li>
+        <li>
+          <strong>Any device</strong>Web and mobile, wherever the conkers fall
+        </li>
       </ul>
 
       <form id="notify-form" action="#" method="post">
-        <label for="email" class="visually-hidden" style="position:absolute; left:-9999px;">Email address</label>
+        <label
+          for="email"
+          class="visually-hidden"
+          style="position: absolute; left: -9999px"
+          >Email address</label
+        >
         <input
           type="email"
           id="email"
@@ -381,27 +442,52 @@
         />
         <button type="submit">Notify me</button>
       </form>
-      <p class="form-note">Be first to know when Konkrs launches. No spam, ever.</p>
+      <p class="form-note">
+        Be first to know when Konkrs launches. No spam, ever.
+      </p>
       <p class="success-message" id="success-message" role="status">
         🌰 Thanks! We&rsquo;ll be in touch when the season starts.
       </p>
+
+      <section aria-labelledby="what-is-conkers">
+        <h2 id="what-is-conkers" class="rfp-heading">What is conkers?</h2>
+        <p class="description">
+          Conkers is a traditional game played by cracking horse chestnuts
+          against each other, often in a friendly local tournament. Learn more
+          on
+          <a
+            href="https://en.wikipedia.org/wiki/Conkers"
+            target="_blank"
+            rel="noopener"
+            >Wikipedia</a
+          >.
+        </p>
+      </section>
     </main>
 
-    <section class="cfp">
-      <h2 class="cfp-heading">Call for Participation</h2>
+    <section class="rfp">
+      <h2 class="rfp-heading">Request for Proposal</h2>
       <p class="description">
-        Want the full picture? Read our Call for Participation to see what Konkrs is
-        building and how you can get involved.
+        Interested in collaborating with Konkrs? Our Request for Proposal
+        outlines the details and requirements for potential partners.
       </p>
-      <div class="cfp-links">
-        <a class="cfp-link" href="cfp.pdf" target="_blank" rel="noopener">📄 View PDF</a>
-        <a class="cfp-link" href="cfp.md" target="_blank" rel="noopener">📝 View Markdown</a>
+      <div class="rfp-links">
+        <a class="rfp-link" href="rfp.pdf" target="_blank" rel="noopener"
+          >📄 View PDF</a
+        >
+        <a class="rfp-link" href="rfp.md" target="_blank" rel="noopener"
+          >📝 View Markdown</a
+        >
       </div>
     </section>
 
     <section class="founder">
       <h2 class="founder-heading">Meet the Founder</h2>
-      <img class="founder-photo" src="me.jpg" alt="Photo of Isaac Oldwood, founder of Konkrs" />
+      <img
+        class="founder-photo"
+        src="me.jpg"
+        alt="Photo of Isaac Oldwood, founder of Konkrs"
+      />
       <p class="founder-name">Isaac Oldwood</p>
       <p class="founder-note">
         Reach out if you would like me to run this workshop for you.
@@ -421,9 +507,7 @@
       </a>
     </section>
 
-    <footer>
-      &copy; <span id="year"></span> Konkrs. All rights reserved.
-    </footer>
+    <footer>&copy; <span id="year"></span> Konkrs. All rights reserved.</footer>
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
